@@ -1,4 +1,4 @@
 vim
 ===
 
-vim configures
+vim configures at seas
