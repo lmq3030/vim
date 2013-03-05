@@ -7,14 +7,26 @@ set cursorline
 set ruler
 set cmdheight=1
 set rulerformat=%55(%{strftime('%a\ %b\ %e\ %I:%M\ %p')}\ %5l,%-6(%c%V%)\ %P%)
-""" Toggle auto-indenting for code paste
-set pastetoggle=<F2>
+set incsearch
+set mouse=a "enable mouse mode, now needs Shift+Ctrl then right mouse -> select paste to paste text
+
+"""  map tab switching   """"""
+map <C-l>   :tabn<CR>
+map <C-h>   :tabp<CR>
+map <C-n>   :tabnew<CR>
+  
+set pastetoggle=<F2> """ Toggle auto-indenting for code paste
+map  <C-n> :tabnew<CR>
 call pathogen#infect() 
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
 
 au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
+
+let g:NERDTreeDirArrows=0 "make nerdtree compatible with terminal
 
 """"""""""""""""""""""""""""""""""" Haskell Mode"""""""""""""""""""""""""""""""""""""""""
 " You may already have the following two on, please check
@@ -57,3 +69,14 @@ au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
 set completeopt=menuone,menu,longest,preview
 " configure tags - add additional tags here or comment out not-used ones
 """"""""""""""""""""""""""""""""""" Start of Omnicppcomplete"""""""""""""""""""""""""""""""""""""""""
+
+""""""""""""""""""""""""""""""""""" Start of Solarized Vim"""""""""""""""""""""""""""""""""""""""""
+set background=dark
+let g:solarized_termtrans=1
+let g:solarized_termcolors=256
+let g:solarized_contrast="high"
+let g:solarized_visibility="high"
+colorscheme solarized
+""""""""""""""""""""""""""""""""""" End of Solarized Vim"""""""""""""""""""""""""""""""""""""""""
+
+
