@@ -16,3 +16,6 @@
 [submodule "bundle/AS"]
 	path = bundle/AS
 	url = git@github.com:vim-scripts/a.vim.git
+[submodule "bundle/indent-guide"]
+	path = bundle/indent-guide
+	url = git@github.com:nathanaelkane/vim-indent-guides.git

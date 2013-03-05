@@ -86,3 +86,15 @@ function! EnhanceCppSyntax()
 endfunction
 
 autocmd Syntax cpp call EnhanceCppSyntax()
+
+" set color column
+map cc :call SetColorColumn()<CR>
+function! SetColorColumn()
+    let col_num = virtcol(".")
+    let cc_list = split(&cc, ',')
+    if count(cc_list, string(col_num)) <= 0
+        execute "set cc+=".col_num
+    else
+        execute "set cc-=".col_num
+    endif
+endfunction
