@@ -19,3 +19,18 @@
 [submodule "bundle/indent-guide"]
 	path = bundle/indent-guide
 	url = git@github.com:nathanaelkane/vim-indent-guides.git
+[submodule "bundle/mark"]
+	path = bundle/mark
+	url = git@github.com:vim-scripts/Mark--Karkat.git
+[submodule "bundle/snipmate"]
+	path = bundle/snipmate
+	url = git@github.com:garbas/vim-snipmate.git
+[submodule "bundle/tlib_vim"]
+	path = bundle/tlib_vim
+	url = https://github.com/tomtom/tlib_vim.git
+[submodule "bundle/mw-util"]
+	path = bundle/mw-util
+	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
+[submodule "bundle/snipmate-snippets"]
+	path = bundle/snipmate-snippets
+	url = https://github.com/honza/snipmate-snippets.git
