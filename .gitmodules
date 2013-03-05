@@ -13,9 +13,6 @@
 [submodule "bundle/tagbar"]
 	path = bundle/tagbar
 	url = git://github.com/majutsushi/tagbar.git
-[submodule "bundle/searchcomplete"]
-	path = bundle/searchcomplete
-	url = git@github.com:vim-scripts/SearchComplete.git
 [submodule "bundle/AS"]
 	path = bundle/AS
 	url = git@github.com:vim-scripts/a.vim.git
