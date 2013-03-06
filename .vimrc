@@ -26,7 +26,7 @@ au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
 
-let g:NERDTreeDirArrows=0 "make nerdtree compatible with terminal
+let g:NERDTreeDirArrows=0 "make nerdtree compatible with terminal mode
 
 """"""""""""""""""""""""""""""""""" Haskell Mode"""""""""""""""""""""""""""""""""""""""""
 " You may already have the following two on, please check

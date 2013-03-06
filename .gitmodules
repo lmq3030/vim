@@ -22,6 +22,7 @@
 [submodule "bundle/mark"]
 	path = bundle/mark
 	url = git@github.com:vim-scripts/Mark--Karkat.git
+    ignore = dirty
 [submodule "bundle/snipmate"]
 	path = bundle/snipmate
 	url = git@github.com:garbas/vim-snipmate.git
@@ -37,3 +38,4 @@
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = git@github.com:vim-scripts/Syntastic.git
+    ignore = dirty
