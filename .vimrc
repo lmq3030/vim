@@ -28,10 +28,12 @@ au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
 
+"""""""""""""""""""""""global plugin settings""""""""""""""""""""""
 let g:NERDTreeDirArrows=0 "make nerdtree compatible with terminal mode
 let g:syntastic_cpp_include_dirs = ['/home1/m/muqili/CIS553/project1/cis553_proj1/ns-3/build/debug/']
-nmap <F8> :TagbarToggle<CR> " F8 key will toggle the Tagbar window
-
+let g:syntastic_cpp_compiler_options = ' -std=c++0x'
+nmap <F4> :TagbarToggle<CR> " F4 key will toggle the Tagbar window
+nmap <F5> : NERDTreeToggle<CR> " F5 key will toggle the NerdTree window
 """"""""""""""""""""""""""""""""""" Haskell Mode"""""""""""""""""""""""""""""""""""""""""
 " You may already have the following two on, please check
 syntax on
@@ -82,7 +84,7 @@ let g:solarized_contrast="high"
 let g:solarized_visibility="high"
 colorscheme solarized
 """"""""""""""""""""""""""""""""""" End of Solarized Vim"""""""""""""""""""""""""""""""""""""""""
-
+""""""""""""""""""""""""""""""""""" Start of Self-defined Functions
 " Add highlighting for function definition in C++
 function! EnhanceCppSyntax()
   syn match cppFuncDef "::\~\?\zs\h\w*\ze([^)]*\()\s*\(const\)\?\)\?$"
@@ -102,3 +104,7 @@ function! SetColorColumn()
         execute "set cc-=".col_num
     endif
 endfunction
+
+
+
+"""""""""""""""""""""""""""""""End of Self-defined functions  """"""""""""""""""""""""""""""""""""""""""""
