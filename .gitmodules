@@ -37,5 +37,4 @@
 	url = https://github.com/honza/snipmate-snippets.git
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
-	url = git@github.com:vim-scripts/Syntastic.git
-    ignore = dirty
+	url = git@github.com:scrooloose/syntastic.git

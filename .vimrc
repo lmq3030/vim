@@ -10,11 +10,13 @@ set rulerformat=%55(%{strftime('%a\ %b\ %e\ %I:%M\ %p')}\ %5l,%-6(%c%V%)\ %P%)
 set incsearch
 set mouse=a "enable mouse mode, now needs Shift+Ctrl then right mouse -> select paste to paste text
 
+let g:syntastic_cpp_no_include_search = 1
+
 """  map tab switching   """"""
 map <C-l>   :tabn<CR>
 map <C-h>   :tabp<CR>
 map <C-n>   :tabnew<CR>
-  
+ 
 set pastetoggle=<F2> """ Toggle auto-indenting for code paste
 map  <C-n> :tabnew<CR>
 call pathogen#infect() 
@@ -27,6 +29,8 @@ au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
 
 let g:NERDTreeDirArrows=0 "make nerdtree compatible with terminal mode
+let g:syntastic_cpp_include_dirs = ['/home1/m/muqili/CIS553/project1/cis553_proj1/ns-3/build/debug/']
+nmap <F8> :TagbarToggle<CR> " F8 key will toggle the Tagbar window
 
 """"""""""""""""""""""""""""""""""" Haskell Mode"""""""""""""""""""""""""""""""""""""""""
 " You may already have the following two on, please check
