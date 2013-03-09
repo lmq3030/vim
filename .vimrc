@@ -23,6 +23,7 @@ call pathogen#infect()
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
+
 au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
@@ -32,6 +33,9 @@ au Syntax * RainbowParenthesesLoadBraces
 let g:NERDTreeDirArrows=0 "make nerdtree compatible with terminal mode
 let g:syntastic_cpp_include_dirs = ['/home1/m/muqili/CIS553/project1/cis553_proj1/ns-3/build/debug/']
 let g:syntastic_cpp_compiler_options = ' -std=c++0x'
+let g:EchoFuncKeyNext='<C-n>' " display echofunc next function prototype
+let g:EchoFuncKeyPrev='<C-p>' " display echofunc previous function prototype
+
 nmap <F4> :TagbarToggle<CR> " F4 key will toggle the Tagbar window
 nmap <F5> : NERDTreeToggle<CR> " F5 key will toggle the NerdTree window
 """"""""""""""""""""""""""""""""""" Haskell Mode"""""""""""""""""""""""""""""""""""""""""
@@ -104,7 +108,5 @@ function! SetColorColumn()
         execute "set cc-=".col_num
     endif
 endfunction
-
-
 
 """""""""""""""""""""""""""""""End of Self-defined functions  """"""""""""""""""""""""""""""""""""""""""""
