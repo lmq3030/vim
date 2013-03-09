@@ -78,7 +78,7 @@ let OmniCpp_DefaultNamespaces = ["std", "_GLIBCXX_STD"]
 au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
 set completeopt=menuone,menu,longest,preview
 " configure tags - add additional tags here or comment out not-used ones
-""""""""""""""""""""""""""""""""""" Start of Omnicppcomplete"""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""End of Omnicppcomplete"""""""""""""""""""""""""""""""""""""""""
 
 """"""""""""""""""""""""""""""""""" Start of Solarized Vim"""""""""""""""""""""""""""""""""""""""""
 set background=dark
@@ -88,6 +88,7 @@ let g:solarized_contrast="high"
 let g:solarized_visibility="high"
 colorscheme solarized
 """"""""""""""""""""""""""""""""""" End of Solarized Vim"""""""""""""""""""""""""""""""""""""""""
+
 """"""""""""""""""""""""""""""""""" Start of Self-defined Functions
 " Add highlighting for function definition in C++
 function! EnhanceCppSyntax()
