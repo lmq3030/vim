@@ -98,7 +98,7 @@ endfunction
 
 autocmd Syntax cpp call EnhanceCppSyntax()
 
-" set color column
+" set color column, shortkey is cc
 map cc :call SetColorColumn()<CR>
 function! SetColorColumn()
     let col_num = virtcol(".")
